@@ -55,8 +55,9 @@ General:
 #### Install MongoDB 4.2 in Ubuntu 18.04
 [Official installation guide](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/)
 
-
+`
 $ wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | apt-key add -
+
 $ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" > /etc/apt/sources.list.d/mongodb-org-4.2.list
 $ sudo apt-get update
 $ sudo apt-get install -y mongodb-org
@@ -78,7 +79,7 @@ $ pip3 install pymongo
 $ python3
 >>> import pymongo
 >>> pymongo.__version__
-'3.10.1'
+'3.10.1'`
 
 Potential issue if documents creation doesn’t work or this error: `Data directory /data/db not found., terminating (source and source)`
 
